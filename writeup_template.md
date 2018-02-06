@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/car_not_car.png
 [image2]: ./output_images/hog_image.jpg
 [image3]: ./output_images/slide_windows.jpg
-[image4]: ./output_images/slide_window.jpg
+[image4]: ./output_images/slide_windows.jpg
 [image5]: ./output_images/bboxes_and_heat.jpg
 [image6]: ./test_images/test1.jpg
 [image7]: ./output_images/test1.jpg
@@ -48,7 +48,6 @@ I then explored different color spaces and different `skimage.hog()` parameters 
 
 Here is an example using the `RGB` color space and HOG parameters of `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
-
 ![alt text][image2]
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
@@ -71,7 +70,7 @@ I decided to search window positions withing ystart,ystop = 380px, 720px where I
 
 Ultimately I searched on two scales using RGB 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result. I found better results with RGB than Yc2Cb  Here are some example images:
 
-![alt text][image4]
+![alt text][image7]
 ---
 
 ### Video Implementation
@@ -86,15 +85,9 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
-### Here are six frames and their corresponding heatmaps:
+### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames and the resulting bounding boxes are drawn onto the last frame in the series:
 
 ![alt text][image5]
-
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
-![alt text][image6]
-
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
-![alt text][image7]
 
 
 
