@@ -19,9 +19,9 @@ The goals / steps of this project are the following:
 [image2]: ./output_images/hog_image.jpg
 [image3]: ./output_images/slide_windows.jpg
 [image4]: ./output_images/slide_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/test1.png
-[image7]: ./examples/output_bboxes.png
+[image5]: ./output_images/bboxes_and_heat.jpg
+[image6]: ./test_images/test1.jpg
+[image7]: ./output_images/test1.jpg
 [video1]: ./final_output_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -77,7 +77,7 @@ Ultimately I searched on two scales using RGB 3-channel HOG features plus spatia
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./final_output_video.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
